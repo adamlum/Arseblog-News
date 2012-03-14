@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD1B265414C363DA00F84FE4 /* NewsFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1B265314C363DA00F84FE4 /* NewsFetcher.m */; };
+		FD1B266114C36C9B00F84FE4 /* ArseblogNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD1B265F14C36C9A00F84FE4 /* ArseblogNews.xcdatamodeld */; };
+		FD1B266414C3E4DB00F84FE4 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1B266314C3E4DB00F84FE4 /* NSDate+InternetDateTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FD1B266714C3E6D000F84FE4 /* NewsEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1B266614C3E6D000F84FE4 /* NewsEntry.m */; };
+		FD1B266A14C3E71800F84FE4 /* NewsEntry+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1B266914C3E71800F84FE4 /* NewsEntry+Create.m */; };
+		FD28BEDE14C27BD1009B5467 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD28BEDD14C27BD1009B5467 /* UIKit.framework */; };
+		FD28BEE014C27BD1009B5467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD28BEDF14C27BD1009B5467 /* Foundation.framework */; };
+		FD28BEE214C27BD1009B5467 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD28BEE114C27BD1009B5467 /* CoreGraphics.framework */; };
+		FD28BEE814C27BD1009B5467 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD28BEE614C27BD1009B5467 /* InfoPlist.strings */; };
+		FD28BEEA14C27BD1009B5467 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD28BEE914C27BD1009B5467 /* main.m */; };
+		FD28BEEE14C27BD1009B5467 /* ArseblogNewsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD28BEED14C27BD1009B5467 /* ArseblogNewsAppDelegate.m */; };
+		FD28BEF114C27BD1009B5467 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD28BEEF14C27BD1009B5467 /* iPhone.storyboard */; };
+		FD28BEF414C27BD1009B5467 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD28BEF214C27BD1009B5467 /* iPad.storyboard */; };
+		FD28BEFF14C27D55009B5467 /* arseblog_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FD28BEFE14C27D55009B5467 /* arseblog_logo.png */; };
+		FD28BF0214C27F79009B5467 /* ArseblogNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD28BF0114C27F79009B5467 /* ArseblogNewsTableViewController.m */; };
+		FD28BF0414C282F3009B5467 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD28BF0314C282F3009B5467 /* CoreData.framework */; };
+		FD28BF0714C2A488009B5467 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD28BF0514C2A488009B5467 /* CoreDataTableViewController.m */; };
+		FD28BF0B14C2AD37009B5467 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FD28BF0A14C2AD37009B5467 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FD28BF0D14C2AEE2009B5467 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FD28BF0C14C2AEE2009B5467 /* libxml2.dylib */; };
+		FD28BF1014C2B28E009B5467 /* GDataXMLElement-Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = FD28BF0F14C2B28E009B5467 /* GDataXMLElement-Extras.m */; };
+		FD35CA8414C6328700796FE6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FD35CA8314C6328700796FE6 /* Reachability.m */; };
+		FD35CA8714C634D300796FE6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD35CA8614C634D300796FE6 /* SystemConfiguration.framework */; };
+		FD44A47414C4B52200F1B10C /* NewsEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD44A47314C4B52200F1B10C /* NewsEntryViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD1B265214C363DA00F84FE4 /* NewsFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFetcher.h; sourceTree = "<group>"; };
+		FD1B265314C363DA00F84FE4 /* NewsFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFetcher.m; sourceTree = "<group>"; };
+		FD1B266014C36C9A00F84FE4 /* ArseblogNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArseblogNews.xcdatamodel; sourceTree = "<group>"; };
+		FD1B266214C3E4DB00F84FE4 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		FD1B266314C3E4DB00F84FE4 /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		FD1B266514C3E6D000F84FE4 /* NewsEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsEntry.h; sourceTree = "<group>"; };
+		FD1B266614C3E6D000F84FE4 /* NewsEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsEntry.m; sourceTree = "<group>"; };
+		FD1B266814C3E71800F84FE4 /* NewsEntry+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NewsEntry+Create.h"; sourceTree = "<group>"; };
+		FD1B266914C3E71800F84FE4 /* NewsEntry+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NewsEntry+Create.m"; sourceTree = "<group>"; };
+		FD28BED914C27BD1009B5467 /* ArseblogNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArseblogNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD28BEDD14C27BD1009B5467 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FD28BEDF14C27BD1009B5467 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD28BEE114C27BD1009B5467 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FD28BEE514C27BD1009B5467 /* ArseblogNews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ArseblogNews-Info.plist"; sourceTree = "<group>"; };
+		FD28BEE714C27BD1009B5467 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD28BEE914C27BD1009B5467 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD28BEEB14C27BD1009B5467 /* ArseblogNews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArseblogNews-Prefix.pch"; sourceTree = "<group>"; };
+		FD28BEEC14C27BD1009B5467 /* ArseblogNewsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArseblogNewsAppDelegate.h; sourceTree = "<group>"; };
+		FD28BEED14C27BD1009B5467 /* ArseblogNewsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArseblogNewsAppDelegate.m; sourceTree = "<group>"; };
+		FD28BEF014C27BD1009B5467 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
+		FD28BEF314C27BD1009B5467 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPad.storyboard; sourceTree = "<group>"; };
+		FD28BEFE14C27D55009B5467 /* arseblog_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arseblog_logo.png; sourceTree = "<group>"; };
+		FD28BF0014C27F79009B5467 /* ArseblogNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArseblogNewsTableViewController.h; sourceTree = "<group>"; };
+		FD28BF0114C27F79009B5467 /* ArseblogNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArseblogNewsTableViewController.m; sourceTree = "<group>"; };
+		FD28BF0314C282F3009B5467 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FD28BF0514C2A488009B5467 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		FD28BF0614C2A488009B5467 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		FD28BF0914C2AD37009B5467 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		FD28BF0A14C2AD37009B5467 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		FD28BF0C14C2AEE2009B5467 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		FD28BF0E14C2B28E009B5467 /* GDataXMLElement-Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDataXMLElement-Extras.h"; sourceTree = "<group>"; };
+		FD28BF0F14C2B28E009B5467 /* GDataXMLElement-Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDataXMLElement-Extras.m"; sourceTree = "<group>"; };
+		FD35CA8214C6328700796FE6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FD35CA8314C6328700796FE6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FD35CA8614C634D300796FE6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FD44A47214C4B52200F1B10C /* NewsEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsEntryViewController.h; sourceTree = "<group>"; };
+		FD44A47314C4B52200F1B10C /* NewsEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsEntryViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD28BED614C27BD1009B5467 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD35CA8714C634D300796FE6 /* SystemConfiguration.framework in Frameworks */,
+				FD28BF0D14C2AEE2009B5467 /* libxml2.dylib in Frameworks */,
+				FD28BF0414C282F3009B5467 /* CoreData.framework in Frameworks */,
+				FD28BEDE14C27BD1009B5467 /* UIKit.framework in Frameworks */,
+				FD28BEE014C27BD1009B5467 /* Foundation.framework in Frameworks */,
+				FD28BEE214C27BD1009B5467 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD1B265E14C36AEE00F84FE4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FD35CA8214C6328700796FE6 /* Reachability.h */,
+				FD35CA8314C6328700796FE6 /* Reachability.m */,
+				FD1B266514C3E6D000F84FE4 /* NewsEntry.h */,
+				FD1B266614C3E6D000F84FE4 /* NewsEntry.m */,
+				FD1B266214C3E4DB00F84FE4 /* NSDate+InternetDateTime.h */,
+				FD1B266314C3E4DB00F84FE4 /* NSDate+InternetDateTime.m */,
+				FD28BF0514C2A488009B5467 /* CoreDataTableViewController.m */,
+				FD28BF0614C2A488009B5467 /* CoreDataTableViewController.h */,
+				FD1B265214C363DA00F84FE4 /* NewsFetcher.h */,
+				FD1B265314C363DA00F84FE4 /* NewsFetcher.m */,
+				FD1B266814C3E71800F84FE4 /* NewsEntry+Create.h */,
+				FD1B266914C3E71800F84FE4 /* NewsEntry+Create.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FD28BECE14C27BD1009B5467 = {
+			isa = PBXGroup;
+			children = (
+				FD35CA8614C634D300796FE6 /* SystemConfiguration.framework */,
+				FD28BF0C14C2AEE2009B5467 /* libxml2.dylib */,
+				FD28BF0314C282F3009B5467 /* CoreData.framework */,
+				FD28BEE314C27BD1009B5467 /* ArseblogNews */,
+				FD28BEDC14C27BD1009B5467 /* Frameworks */,
+				FD28BEDA14C27BD1009B5467 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD28BEDA14C27BD1009B5467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD28BED914C27BD1009B5467 /* ArseblogNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD28BEDC14C27BD1009B5467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD28BEDD14C27BD1009B5467 /* UIKit.framework */,
+				FD28BEDF14C27BD1009B5467 /* Foundation.framework */,
+				FD28BEE114C27BD1009B5467 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD28BEE314C27BD1009B5467 /* ArseblogNews */ = {
+			isa = PBXGroup;
+			children = (
+				FD1B265E14C36AEE00F84FE4 /* Classes */,
+				FD28BF0814C2AD03009B5467 /* GDataXML */,
+				FD28BEFD14C27D06009B5467 /* images */,
+				FD28BEEC14C27BD1009B5467 /* ArseblogNewsAppDelegate.h */,
+				FD28BEED14C27BD1009B5467 /* ArseblogNewsAppDelegate.m */,
+				FD28BEEF14C27BD1009B5467 /* iPhone.storyboard */,
+				FD28BEF214C27BD1009B5467 /* iPad.storyboard */,
+				FD28BEE414C27BD1009B5467 /* Supporting Files */,
+				FD28BF0014C27F79009B5467 /* ArseblogNewsTableViewController.h */,
+				FD28BF0114C27F79009B5467 /* ArseblogNewsTableViewController.m */,
+				FD1B265F14C36C9A00F84FE4 /* ArseblogNews.xcdatamodeld */,
+				FD44A47214C4B52200F1B10C /* NewsEntryViewController.h */,
+				FD44A47314C4B52200F1B10C /* NewsEntryViewController.m */,
+			);
+			path = ArseblogNews;
+			sourceTree = "<group>";
+		};
+		FD28BEE414C27BD1009B5467 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD28BEE514C27BD1009B5467 /* ArseblogNews-Info.plist */,
+				FD28BEE614C27BD1009B5467 /* InfoPlist.strings */,
+				FD28BEE914C27BD1009B5467 /* main.m */,
+				FD28BEEB14C27BD1009B5467 /* ArseblogNews-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD28BEFD14C27D06009B5467 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FD28BEFE14C27D55009B5467 /* arseblog_logo.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		FD28BF0814C2AD03009B5467 /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				FD28BF0914C2AD37009B5467 /* GDataXMLNode.h */,
+				FD28BF0A14C2AD37009B5467 /* GDataXMLNode.m */,
+				FD28BF0E14C2B28E009B5467 /* GDataXMLElement-Extras.h */,
+				FD28BF0F14C2B28E009B5467 /* GDataXMLElement-Extras.m */,
+			);
+			name = GDataXML;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD28BED814C27BD1009B5467 /* ArseblogNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD28BEFA14C27BD1009B5467 /* Build configuration list for PBXNativeTarget "ArseblogNews" */;
+			buildPhases = (
+				FD28BED514C27BD1009B5467 /* Sources */,
+				FD28BED614C27BD1009B5467 /* Frameworks */,
+				FD28BED714C27BD1009B5467 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArseblogNews;
+			productName = ArseblogNews;
+			productReference = FD28BED914C27BD1009B5467 /* ArseblogNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD28BED014C27BD1009B5467 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Adam Lum";
+			};
+			buildConfigurationList = FD28BED314C27BD1009B5467 /* Build configuration list for PBXProject "ArseblogNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD28BECE14C27BD1009B5467;
+			productRefGroup = FD28BEDA14C27BD1009B5467 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD28BED814C27BD1009B5467 /* ArseblogNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD28BED714C27BD1009B5467 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD28BEE814C27BD1009B5467 /* InfoPlist.strings in Resources */,
+				FD28BEF114C27BD1009B5467 /* iPhone.storyboard in Resources */,
+				FD28BEF414C27BD1009B5467 /* iPad.storyboard in Resources */,
+				FD28BEFF14C27D55009B5467 /* arseblog_logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD28BED514C27BD1009B5467 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD28BEEA14C27BD1009B5467 /* main.m in Sources */,
+				FD28BEEE14C27BD1009B5467 /* ArseblogNewsAppDelegate.m in Sources */,
+				FD28BF0214C27F79009B5467 /* ArseblogNewsTableViewController.m in Sources */,
+				FD28BF0714C2A488009B5467 /* CoreDataTableViewController.m in Sources */,
+				FD28BF0B14C2AD37009B5467 /* GDataXMLNode.m in Sources */,
+				FD28BF1014C2B28E009B5467 /* GDataXMLElement-Extras.m in Sources */,
+				FD1B265414C363DA00F84FE4 /* NewsFetcher.m in Sources */,
+				FD1B266114C36C9B00F84FE4 /* ArseblogNews.xcdatamodeld in Sources */,
+				FD1B266414C3E4DB00F84FE4 /* NSDate+InternetDateTime.m in Sources */,
+				FD1B266714C3E6D000F84FE4 /* NewsEntry.m in Sources */,
+				FD1B266A14C3E71800F84FE4 /* NewsEntry+Create.m in Sources */,
+				FD44A47414C4B52200F1B10C /* NewsEntryViewController.m in Sources */,
+				FD35CA8414C6328700796FE6 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD28BEE614C27BD1009B5467 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD28BEE714C27BD1009B5467 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD28BEEF14C27BD1009B5467 /* iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD28BEF014C27BD1009B5467 /* en */,
+			);
+			name = iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		FD28BEF214C27BD1009B5467 /* iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD28BEF314C27BD1009B5467 /* en */,
+			);
+			name = iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD28BEF814C27BD1009B5467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD28BEF914C27BD1009B5467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD28BEFB14C27BD1009B5467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArseblogNews/ArseblogNews-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "ArseblogNews/ArseblogNews-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FD28BEFC14C27BD1009B5467 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArseblogNews/ArseblogNews-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "ArseblogNews/ArseblogNews-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD28BED314C27BD1009B5467 /* Build configuration list for PBXProject "ArseblogNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD28BEF814C27BD1009B5467 /* Debug */,
+				FD28BEF914C27BD1009B5467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD28BEFA14C27BD1009B5467 /* Build configuration list for PBXNativeTarget "ArseblogNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD28BEFB14C27BD1009B5467 /* Debug */,
+				FD28BEFC14C27BD1009B5467 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD1B265F14C36C9A00F84FE4 /* ArseblogNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD1B266014C36C9A00F84FE4 /* ArseblogNews.xcdatamodel */,
+			);
+			currentVersion = FD1B266014C36C9A00F84FE4 /* ArseblogNews.xcdatamodel */;
+			path = ArseblogNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD28BED014C27BD1009B5467 /* Project object */;
+}
